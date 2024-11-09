@@ -1,0 +1,25 @@
+{
+  "name": "landing-page",
+  "version": "1.0.0",
+  "description": "Basic landing page in support of The Odin Project full Stack developer path.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:css": "stylelint '**/*.css'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rutabageldev/landing-page.git"
+  },
+  "author": "Rutabagel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rutabageldev/landing-page/issues"
+  },
+  "homepage": "https://github.com/rutabageldev/landing-page#readme",
+  "devDependencies": {
+    "stylelint": "^16.10.0",
+    "stylelint-config-standard": "^36.0.1",
+    "stylelint-order": "^6.0.4"
+  }
+}

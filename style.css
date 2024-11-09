@@ -1,30 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+:root {
+  --font-family-primary: 'Roboto', sans-serif;
+  --color-light-primary: #f9faf8;
+  --color-light-secondary: #E5E7Eb;
+  --color-header: #1F2937;
+  --color-placeholder: #5a5a5a;
+  --color-quote: #E5E7EB;
+  --color-button: #3882F6;
+  --gap-large: 40px;
+  --gap-small: 16px;
+  --font-size-giant: 48px;
+  --font-size-large: 36px;
+  --font-size-mid: 24px;
+  --font-size-small: 18px;
+}
+
+/* === Global Styles === */
 body {
-  font-family: 'roboto', sans-serif;
+  font-family: var(--font-family-primary)
 }
 
-ul{
-  display: flex;
-  gap: 16px;
-
-  list-style: none;
-  font-size: 18px;
-  color: #E5E7Eb;   
-}
-
+/* === Header Section === */
 .header, .hero-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
+    align-items: center;
+    background-color: var(--color-header);
+    display: flex;
+    gap: var(--gap-large);
+    justify-content: space-between;
+    padding: 0 120px 80px;
+  }
 
-  padding: 0px 120px;
-  padding-bottom: 80px;
-   
-  background-color: #1F2937;
+/* === Navigation (ul) Styling === */
+ul{
+  color: var(--color-light-secondary);
+  display: flex;
+  font-size: var(--font-size-small);
+  gap: var(--gap-small);
+  list-style: none;   
 }
 
+/* === Hero Styling === */
 .hero-container{
   align-items: stretch;
   flex: 1;
@@ -35,42 +51,39 @@ ul{
 }
 
 .header__logo {
-  font-size: 24px;
+  color: var(--color-light-primary);
+  font-size: var(--font-size-mid);
   font-weight: 900;
-  color: #F9FAF8;
 }
 
 .hero-container__primary {
-  font-size: 48px;
+  color: var(--color-light-primary);
+  font-size: var(--font-size-giant);
   font-weight: 900;
-  color: #F9FAF8;
 }
 
 .hero-container__secondary {
+  color:var(--color-light-secondary);
+  font-size: var(--font-size-small);
   margin-bottom: 8px;
-    
-  font-size: 18px;
-  color: #E5E7Eb;
 }
 
 .hero-container__image {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  background-color: var(--color-placeholder);
+  color: var(--color-light-primary);
+  display: flex;
   flex: 1;
-
-  width: 100%;
   height: auto;
-
-  background-color: #5a5a5a;
-  color: #F9FAF8;
+  justify-content: center;
+  width: 100%;
 }
 
+/* === Button Styling === */
 button {
-  padding: 8px 24px;
-    
-  background-color: #3882F6;
-  color: #F9FAF8;
-  border: 0px;
+  background-color: var(--color-button);
+  border: none;
   border-radius: 8px;
+  color: var(--color-light-primary);
+  padding: 8px 24px;
 }
