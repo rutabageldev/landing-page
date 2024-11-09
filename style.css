@@ -8,7 +8,9 @@
   --color-placeholder: #5a5a5a;
   --color-quote: #E5E7EB;
   --color-button: #3882F6;
+  --color-text-black: #1F2937;
   --gap-large: 40px;
+  --gap-mid:28px;
   --gap-small: 16px;
   --font-size-giant: 48px;
   --font-size-large: 36px;
@@ -77,6 +79,20 @@ ul{
   height: auto;
   justify-content: center;
   width: 100%;
+}
+
+/* === Info Section Styling === */
+.info-container {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-info {
+  padding: var(--gap-large) 0;
+  
+  color: var(--color-text-black);
+  font-size: var(--font-size-large);
+  font-weight: 900;
 }
 
 /* === Button Styling === */
