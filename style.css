@@ -33,6 +33,12 @@ body {
     padding: 0 120px 80px;
   }
 
+  .header__logo {
+    color: var(--color-light-primary);
+    font-size: var(--font-size-mid);
+    font-weight: 900;
+  }
+
 /* === Navigation (ul) Styling === */
 ul{
   color: var(--color-light-secondary);
@@ -50,12 +56,6 @@ ul{
 
 .hero-container__left {
   flex: 1;
-}
-
-.header__logo {
-  color: var(--color-light-primary);
-  font-size: var(--font-size-mid);
-  font-weight: 900;
 }
 
 .hero-container__primary {
@@ -95,7 +95,7 @@ ul{
   display:flex;
   gap: var(--gap-mid);
   justify-content: center;
-  padding: 0 120px 80px;
+  padding: 0 120px 32px;
 }
 
 .info-images {
@@ -134,6 +134,29 @@ ul{
   font-size: var(--font-size-small);
   max-width: 100%;
   text-align: center
+}
+
+/* === Quote Section Styling === */
+.quote-container {
+  background-color: var(--color-quote);
+  color: var(--color-text-black);
+  display: flex;
+  flex-direction: column;
+}
+
+
+.quote {
+  font-size: var(--font-size-large);
+  font-style: italic;
+  font-weight: 100;
+  margin: 0;
+  padding: 120px 240px 0;
+}
+
+.quote-source{
+  font-weight: 900;
+  padding: 0 240px 80px;
+  text-align: right;
 }
 
 /* === Button Styling === */
