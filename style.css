@@ -159,11 +159,47 @@ ul{
   text-align: right;
 }
 
+/* === Call to Action Styling === */
+.action-container {
+  align-items: center;
+  background-color: var(--color-button);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 120px;
+  padding: 40px 120px;
+}
+
+.action-primary {
+  color: var(--color-light-primary);
+  font-size: var(--font-size-mid);
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+}
+
+.action-secondary {
+  color: var(--color-light-secondary);
+  font-size: var(--font-size-small);
+  margin: 0;
+  padding: 0;
+}
+
 /* === Button Styling === */
 button {
   background-color: var(--color-button);
   border: none;
   border-radius: 8px;
   color: var(--color-light-primary);
+  font-weight: 900;
   padding: 8px 24px;
+}
+
+.button-action {
+  align-items: center;
+  border: 4px var(--color-light-primary) solid;
+  display: flex;
+  font-size: var(--font-size-small);
+  font-weight: 900;
+  height: 36px;
 }
