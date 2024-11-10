@@ -44,7 +44,7 @@ ul{
   color: var(--color-light-secondary);
   display: flex;
   font-size: var(--font-size-small);
-  gap: var(--gap-small);
+  gap: var(--gap-mid);
   list-style: none;   
 }
 
@@ -185,12 +185,27 @@ ul{
   padding: 0;
 }
 
+/* === Footer Styling === */
+.footer-container {
+  align-items: center;
+  background-color: var(--color-header);
+  display: flex;
+  justify-content: center;
+  padding: var(--gap-large) 0;
+}
+
+.footer-text {
+  color: var(--color-light-secondary);
+  font-size: var(--font-size-small);
+}
+
 /* === Button Styling === */
 button {
   background-color: var(--color-button);
   border: none;
   border-radius: 8px;
   color: var(--color-light-primary);
+  font-size: var(--font-size-small);
   font-weight: 900;
   padding: 8px 24px;
 }
